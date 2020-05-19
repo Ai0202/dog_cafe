@@ -1,0 +1,54 @@
+#header {
+  padding: 10px 32px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+#header > nav {
+  display: none;
+}
+
+.logo {
+  text-align: center;
+  color: #411E0C;
+}
+
+.logo > img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.logo > div {
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.humberger-menu {
+  height: 54px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 40px;
+}
+
+.humberger-menu:before,
+.humberger-menu:after {
+  background: #411E0C;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 10%;
+  position: absolute;
+  width: 80%;
+}
+
+.humberger-menu:before {
+  box-shadow: 0 9px 0 #411E0C;
+    top: 0;
+}
+
+.humberger-menu:after {
+  top: 18px;
+}
