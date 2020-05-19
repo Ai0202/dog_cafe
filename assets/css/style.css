@@ -108,3 +108,65 @@
 /* TODO コーヒー豆の画像 */
 
 /* menu */
+.menus {
+  padding: 20px 0;
+  color: #411E0C;
+}
+
+.menus > h2,
+.menus > h3 {
+  text-align: center;
+}
+
+.menus > h2 {
+  font-size: 18px;
+}
+
+.menus > h3 {
+  margin-top: 24px;
+  font-size: 12px;
+}
+
+.menu-list {
+  margin-top: 24px;
+  padding: 0 32px;
+}
+
+.menu {
+  margin-top: 3px;
+  padding: 18px 0 18px 18px;
+  background-color: #E8E5E4;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.menu:first-child {
+  margin-top: 0;
+}
+
+.menu-image-list {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-image {
+  width: 100%;
+  margin: 2px 0;
+  color: #fff;
+  background-color: #411E0C;
+}
+
+.menu-image > img {
+  width: 100%;
+}
+
+.menu-image-discription {
+  line-height: 1.5;
+  padding: 18px 0 18px 18px;
+}
+
+.menu-annotation {
+  padding: 18px;
+  line-height: 1.5;
+}
