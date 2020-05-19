@@ -1,3 +1,4 @@
+/* header */
 #header {
   padding: 10px 32px;
   display: flex;
@@ -23,6 +24,7 @@
   margin-top: 10px;
   font-size: 48px;
   font-weight: bold;
+  /* TODO 数字を画像の上に移動 */
 }
 
 .humberger-menu {
@@ -51,4 +53,36 @@
 
 .humberger-menu:after {
   top: 18px;
+}
+
+/* hero */
+.hero {
+  padding-top: 32px;
+  position: relative;
+}
+
+.hero > .bg-img {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/coffee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-position: center center;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+.main-img > img {
+  max-width: 96%;
 }
