@@ -1,10 +1,35 @@
+/* 共通 */
+* {
+  color: #411E0C
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.8;
+}
+
+.section-title > img {
+  width: 40px;
+}
+
+.section-title > strong {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.section-title > span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
 /* header */
 #header {
   padding: 10px 32px;
   display: flex;
   justify-content: space-between;
   height: 80px;
-  color: #411E0C
 }
 
 #header > nav {
@@ -89,8 +114,7 @@
 
 /* overview */
 .overview {
-  padding: 50px 32px;
-  color: #411E0C;
+  padding: 50px 16px;
 }
 
 .overview > h2 {
@@ -111,7 +135,6 @@
 /* menu */
 .menus {
   padding: 20px 0;
-  color: #411E0C;
 }
 
 .menus > h2,
@@ -130,7 +153,7 @@
 
 .menu-list {
   margin-top: 24px;
-  padding: 0 32px;
+  padding: 0 16px;
 }
 
 .menu {
@@ -154,7 +177,6 @@
 .menu-image {
   width: 100%;
   margin: 2px 0;
-  color: #fff;
   background-color: #411E0C;
 }
 
@@ -165,12 +187,34 @@
 .menu-image-discription {
   line-height: 1.5;
   padding: 18px 0 18px 18px;
+  color: #fff;
 }
 
 .menu-annotation {
   padding: 18px;
   line-height: 1.5;
 }
+
+/* 利用案内 */
+.info {
+  padding: 20px 0;
+}
+
+.information-list {
+  margin-top: 30px;
+  padding: 0 16px;
+}
+
+.information-list dl {
+  padding: 16px;
+  line-height: 1.8;
+  border-top: 1px solid #E8E5E4
+}
+
+.information-list dl:last-child {
+  border-bottom: 1px solid #E8E5E4
+}
+
 
 @media screen and (min-width: 768px) {
   .main-wapper {
@@ -237,5 +281,18 @@
 
   .menu-image {
     width: 33%;
+  }
+
+  /* インフォーメーション */
+  .information-list dl {
+    display: flex;
+  }
+
+  .information-list dt {
+    width: 30%;
+  }
+
+  .information-list dd {
+    width: 70%;
   }
 }
