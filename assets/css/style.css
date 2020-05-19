@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
+  color: #411E0C
 }
 
 #header > nav {
@@ -12,7 +13,6 @@
 
 .logo {
   text-align: center;
-  color: #411E0C;
 }
 
 .logo > img {
@@ -84,6 +84,7 @@
 
 .main-img > img {
   max-width: 96%;
+  max-height: 40vh;
 }
 
 /* overview */
@@ -145,7 +146,7 @@
 }
 
 .menu-image-list {
-  margin-top: 60px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -169,4 +170,72 @@
 .menu-annotation {
   padding: 18px;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .main-wapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+  .main-bg {
+    background-image: url(../images/dog.jpg);
+  }
+  
+  /* header */
+  .humberger-menu {
+    display: none;
+  }
+
+  #header > nav {
+    display: block;
+    align-self: center;
+  }
+
+  #header > nav > ul {
+    display: flex;
+  }
+
+  #header > nav > ul > li {
+    margin-right: 20px;
+  }
+
+  #header > nav > ul > li:last-child {
+    margin-right: 0;
+  }
+
+  /* overview */
+  .overview > p {
+    text-align: center;
+  }
+
+  /* menu */
+  .menu-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    width: 33%;
+  }
+
+  .menu:first-child {
+    margin-top:3px;
+  }
+
+  .menu:nth-child(3n+2) {
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+  }
+
+  .menu-image-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-image {
+    width: 33%;
+  }
 }
