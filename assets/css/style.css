@@ -215,6 +215,15 @@
   border-bottom: 1px solid #E8E5E4
 }
 
+/* 地図 */
+.map-wrapper {
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.map-wrapper iframe {
+  max-width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .main-wapper {
