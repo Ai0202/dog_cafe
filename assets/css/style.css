@@ -235,10 +235,49 @@
   display: flex;
 }
 
+.sns {
+  padding: 20px 16px 50px;
+}
+
 .sns-list li {
   padding: 0 20px;
 }
 
+#footer {
+  background-color: #411E0C;
+  padding: 20px 16px;
+  position: relative;
+}
+
+#footer > small,
+.to-top {
+  color: #fff;
+  font-size: 12px;
+}
+
+.to-top:before,
+.to-top:after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: #fff;
+  top: 27px;
+  height: 2px;
+  width: 16px;
+
+}
+
+.to-top:before {
+  right: 16px;
+  transform: rotate(45deg);
+}
+
+.to-top:after {
+  right: 26px;
+  transform: rotate(135deg);
+}
+
+/* PC画面 */
 @media screen and (min-width: 768px) {
   .main-wapper {
     max-width: 960px;
@@ -317,5 +356,10 @@
 
   .information-list dd {
     width: 70%;
+  }
+
+  /* footer */
+  #footer {
+    text-align: center;
   }
 }
