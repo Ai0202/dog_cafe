@@ -355,26 +355,32 @@ nav.active .nav-close-btn {
   font-size: 12px;
 }
 
+.to-top {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+    right: 16px;
+}
+
 .to-top:before,
 .to-top:after {
   position: absolute;
   display: block;
   content: "";
   background: #fff;
-  top: 27px;
   height: 2px;
   width: 16px;
-
+  top: 8px;
 }
 
 .to-top:before {
-  right: 16px;
-  transform: rotate(45deg);
+  left: -4px;
+  transform: rotate(135deg);
 }
 
 .to-top:after {
-  right: 26px;
-  transform: rotate(135deg);
+  left: 6px;
+  transform: rotate(45deg);
 }
 
 /* PC画面 */
