@@ -209,11 +209,10 @@ nav.active .nav-close-btn {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../images/coffee.jpg);
+  background-image: url(../images/bg-keyvisual.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: blur(6px);
   z-index: -1;
 }
 
@@ -247,7 +246,14 @@ nav.active .nav-close-btn {
   letter-spacing: 1px;
 }
 
-/* TODO コーヒー豆の画像 */
+.bg-beans {
+  text-align: center;
+  padding: 20px;
+}
+
+.bg-beans > img {
+  width: 100%;
+}
 
 /* menu */
 .menus {
@@ -414,7 +420,7 @@ nav.active .nav-close-btn {
   }
 
   .main-bg {
-    background-image: url(../images/dog.jpg);
+    background-image: url(../images/bg-pattern.png);
   }
   
   /* header */
@@ -463,6 +469,10 @@ nav.active .nav-close-btn {
   /* overview */
   .overview > p {
     text-align: center;
+  }
+
+  .bg-beans > img {
+    width: 50%;
   }
 
   /* menu */
