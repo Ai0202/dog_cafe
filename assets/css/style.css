@@ -36,6 +36,7 @@
   height: 80px;
   position: relative;
   color: #411E0C;
+  z-index: 999;
 }
 
 #header > nav {
@@ -165,7 +166,6 @@ nav.active .nav-close-btn {
   margin-top: 10px;
   font-size: 48px;
   font-weight: bold;
-  /* TODO 数字を画像の上に移動 */
 }
 
 .humberger-menu {
