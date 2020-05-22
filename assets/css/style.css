@@ -1,8 +1,4 @@
 /* 共通 */
-* {
-  color: #411E0C
-}
-
 .section-title {
   display: flex;
   flex-direction: column;
@@ -14,7 +10,7 @@
   width: 40px;
 }
 
-.section-title > strong {
+.section-title > .section-title-main {
   font-size: 24px;
   letter-spacing: 2px;
 }
@@ -28,6 +24,10 @@
   padding: 20px 0;
 }
 
+.sns-list a {
+  color: #411E0C;
+}
+
 /* header */
 #header {
   padding: 10px 16px;
@@ -35,6 +35,7 @@
   justify-content: space-between;
   height: 80px;
   position: relative;
+  color: #411E0C;
 }
 
 #header > nav {
@@ -97,12 +98,18 @@ nav.active > .nav-link {
   margin-top: 50px;
 }
 
+.nav-link > li:hover {
+  color: #C38741;
+  cursor: pointer;
+}
+
 nav.active > .nav-link > li:first-child {
   margin-top: 0px;
 }
 
-#header > nav.active ul > li,
-#header > nav.active ul > li i:before {
+nav.active .nav-link,
+nav.active .sns-list,
+nav.active ul > li i:before {
   color: #fff;
 }
 
@@ -223,6 +230,7 @@ nav.active .nav-close-btn {
 /* overview */
 .overview {
   padding: 50px 16px;
+  color: #411E0C;
 }
 
 .overview > h2 {
@@ -241,6 +249,9 @@ nav.active .nav-close-btn {
 /* TODO コーヒー豆の画像 */
 
 /* menu */
+.menus {
+  color: #411E0C;
+}
 
 .menus > h2,
 .menus > h3 {
@@ -301,6 +312,10 @@ nav.active .nav-close-btn {
 }
 
 /* 利用案内 */
+.info {
+  color: #411E0C;
+}
+
 .information-list {
   margin-top: 30px;
   padding: 0 16px;
@@ -317,6 +332,10 @@ nav.active .nav-close-btn {
 }
 
 /* 地図 */
+.access {
+  color: #411E0C;
+}
+
 .map-wrapper {
   padding: 16px;
   margin: 0 auto;
@@ -332,6 +351,7 @@ nav.active .nav-close-btn {
   flex-direction: column;
   align-items: center;
   padding: 20px 16px 50px;
+  color: #411E0C;
 }
 
 .sns > .sns-list {
