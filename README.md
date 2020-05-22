@@ -11,6 +11,7 @@ https://dog-cafe.netlify.app/
 - HTML
 - CSS
 - JavaScript(jQuery)
+- [fontawesome](https://fontawesome.com/)
 
 ## 地図の埋め込み
 1. 表示したい場所をgoogleで検索
