@@ -23,13 +23,10 @@ $(function() {
     console.log(targetPlace);
     
     $('body, html').animate({ scrollTop: targetPlace }, 500);
-
-    console.log($('#header nav').hasClass('active'));
     
+    // ハンバーガーメニューが展開された状態の場合は閉じる
     if ($('#header nav').hasClass('active')) {
       $('#header nav').removeClass('active');
     }
-
   })
-
 });
