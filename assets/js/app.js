@@ -1,6 +1,6 @@
 $(function() {
+  // スムーススクロール
   $('.to-top').on('click', function() {
-    console.log(1);
+    $('body, html').animate({ scrollTop: 0 }, 500);
   })
-  
 });
