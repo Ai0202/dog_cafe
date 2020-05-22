@@ -38,12 +38,12 @@
 }
 
 #header > nav {
-  display: none;
+  position: absolute;
+  top: -500px;
 }
 
 /* ハンバーガーメニュー展開 */
 #header > nav.active {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -55,6 +55,7 @@
   min-height: 70vh;
   z-index: 9999;
   padding: 30px 0;
+  transition: top 1s ease;
 }
 
 #header > nav.active:before {
@@ -408,6 +409,8 @@ nav.active .nav-close-btn {
   #header > nav {
     display: flex;
     align-self: center;
+    position: relative;
+    top: 0;
   }
 
   #header > nav > ul {
