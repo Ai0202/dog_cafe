@@ -14,5 +14,22 @@ $(function() {
     $('#header nav').removeClass('active');
   })
 
+  // ページ内リンク
+  $('.nav-link > li').on('click', function() {
+    const target = $(this).attr('class');
+    console.log('#' + target);
+    
+    const targetPlace = $('#' + target).offset().top;
+    console.log(targetPlace);
+    
+    $('body, html').animate({ scrollTop: targetPlace }, 500);
+
+    console.log($('#header nav').hasClass('active'));
+    
+    if ($('#header nav').hasClass('active')) {
+      $('#header nav').removeClass('active');
+    }
+
+  })
 
 });
