@@ -101,6 +101,7 @@ nav.active > .nav-link {
 .nav-link > li:hover {
   color: #C38741;
   cursor: pointer;
+  border-color: #C38741;
 }
 
 nav.active > .nav-link > li:first-child {
@@ -435,10 +436,13 @@ nav.active .nav-close-btn {
 
   #header > nav > ul {
     display: flex;
+    align-items: center;
   }
 
   #header > nav > ul > li {
     margin-right: 20px;
+    margin-top: 0;
+    border-color: #411E0C;
   }
 
   #header > nav > ul > li:last-child {
@@ -447,6 +451,7 @@ nav.active .nav-close-btn {
 
   #header .sns-list {
     margin-left: 30px;
+    margin-top: 0;
   }
 
 
